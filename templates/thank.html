@@ -54,93 +54,48 @@
         </div>
     </nav>
 
-    <section class="site-hero overlay page-inside" style="background-image: url({{url_for('static', filename='img/bia2.jpg')}}">
+
+    <section class="site-hero overlay page-inside" style="background-image: url(img/1.jpg)">
         <div class="container">
             <div class="row site-hero-inner align-items-center">
-                <div class="col-md-7 text-left mr-auto">
-                    <h1 class="heading newfont" data-aos="fade-up">Tour4teen Combo</h1>
+                <div class="col-md-7 text-left mr-auto" data-aos="fade-up">
+                    <h1 class="heading">Lời cảm ơn </h1>
+                    <p class="sub-heading">Have a nice day!</p>
                 </div>
             </div>
-            <a href="#next-section" class="smoothscroll scroll-down"></a>
+
         </div>
     </section>
     <!-- END section -->
 
 
-    <section class="my-5">
+    <section class="section" id="next-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 mx-auto">
-                    <p class="mb-0">Tour4teen - hệ thống cung cấp dịch vụ du lịch giá rẻ uy tín </p>
+            <div class="row mb-5">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="{{url_for('static', filename='img/img_1.jpg')}}" alt="Image" class="img-fluid rounded img-shadow">
+                </div>
+                <div class="col-md-6">
+                    <img src="{{url_for('static', filename='img/img_2.jpg')}}" alt="Image" class="img-fluid rounded img-shadow">
+                </div>
+            </div>
+            <div class="row mt-5">
 
-                    <p class="mb-0">
-                        <a>Sở hữu những phút giây tuyệt vời với chi phí rẻ nhất  </a>
-                    </p>
+                <div class="col-lg-8 ml-auto">
+                    <h3 class="mb-3">$1,650</h3>
+                    <p class="mb-5">2724 20th Ave N, Houston TX</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe omnis beatae libero quisquam ex nostrum repellendus, consectetur suscipit. Velit iusto ducimus sit quos officiis nesciunt libero, officia, aliquam doloremque totam.</p>
+                    <p>Ratione natus expedita iusto, minus cumque vitae quo culpa reiciendis aspernatur aliquam veritatis magnam non, dicta nemo inventore, nisi quas dolores. Modi laboriosam sunt aliquid rem, deserunt quis? Porro, hic.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe omnis beatae libero quisquam ex nostrum repellendus, consectetur suscipit. Velit iusto ducimus sit quos officiis nesciunt libero, officia, aliquam doloremque totam.</p>
+                    <p>Ratione natus expedita iusto, minus cumque vitae quo culpa reiciendis aspernatur aliquam veritatis magnam non, dicta nemo inventore, nisi quas dolores. Modi laboriosam sunt aliquid rem, deserunt quis? Porro, hic.</p>
+
+                    <p><a href="{{url_for('templates', filename='tour-form.html')}}" class="btn btn-primary">Contact Me</a></p>
+
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="section visit-section" id="next-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="heading" data-aos="fade-up">COMBO TOUR </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up">
-                    <a href="/tour-single"><img src="{{url_for('static', filename='img/img_1.jpg')}}" alt="Image placeholder" class="img-fluid rounded"> </a>
-                    <h3><a href="/tour-single">900.000 VND/người</a></h3>
-                    <div class="reviews-star float-left">
-                        Tam Đảo - 3 ngày 2 đêm
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up" data-aos-delay="100">
-                    <a href="/tour-single"><img src="{{url_for('static', filename='img/img_2.jpg')}}" alt="Image placeholder" class="img-fluid rounded"> </a>
-                    <h3><a href="/tour-single">1,100,000 VND/người</a></h3>
-                    <div class="reviews-star float-left">
-                        Sapa - 3 ngày 2 đêm
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up" data-aos-delay="200">
-                    <a href="/tour-single"><img src="{{url_for('static', filename='img/img_3.jpg')}}" alt="Image placeholder" class="img-fluid rounded"> </a>
-                    <h3><a href="/tour-single">600,000 VND/người </a></h3>
-                    <div class="reviews-star float-left">
-                        Ba Vì - 2 ngày 1 đêm
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up" data-aos-delay="300">
-                    <a href="/tour-single"><img src="{{url_for('static', filename='img/img_4.jpg')}}" alt="Image placeholder" class="img-fluid rounded"> </a>
-                    <h3><a href="/tour-single">750,000 VND/người</a></h3>
-                    <div class="reviews-star float-left">
-                        Hạ Long - 2 ngày 1 đêm
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </div>
-    </section>
-    <!-- END section -->
-
-
 
     <section class="section">
         <div class="container">
@@ -159,7 +114,6 @@
             </div>
         </div>
     </section>
-
 
 
 
@@ -199,13 +153,13 @@
         </div>
     </footer>
 
-    <script src="{{url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/aos.js')}}"></script>
-    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

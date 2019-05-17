@@ -1,91 +1,319 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tour4teen &mdash; Du lịch rẻ - niềm vui khỏe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" media="screen" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400|Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Cookie">
-
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bangers|Bungee+Shade|Comfortaa|Farsan|Faster+One|Finger+Paint|Fredoka+One|Lobster|Pacifico|Satisfy" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
-    <script src="jquery/jquery-3.4.0.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Fira+Sans:300i|Open+Sans+Condensed:300|Oswald:300|Roboto:300" rel="stylesheet">
 
 
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/animate.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/aos.css')}}">
 
+    <link rel="stylesheet" href="{{url_for('static', filename='fonts/ionicons/css/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='fonts/fontawesome/css/font-awesome.min.css')}}">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-                <a class="navbar-brand" href="#">Title</a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
-                <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top colorchange">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tour4teen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+
+
+
+                    <a class="dropdown-item" href="/">Home</a>
+                    <a class="dropdown-item" href="/blog">Blog</a>
+
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/combo">Combo tour</a>
+
                     </li>
+
                 </ul>
+
             </div>
-            <!-- /.navbar-collapse -->
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <video autoplay muted loop id="myVideo">
-                    <source src="video/videoplayback (1).mp4" type="video/mp4">
-                  </video>
-        <!-- Optional: some overlay text to describe the video -->
-        <section class="section ">
-            <div class="content">
-                <h1>Welcome to Tour4Teen</h1>
-                <h4>Let's explore Viet Nam and enjoy meaningful moments !</h4>
-                <a href="" class="btn btn-info">Info</a>
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="{{url_for('static', filename='img/videoplayback (1).mp4')}}" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3">Tour4teen</h1>
+                    <p class="lead mb-0">Let's explore Viet Nam and enjoy meaningful moments !</p>
+                    <a href="" class="btn btn-info">Info</a>
+                </div>
             </div>
-        </section>
+        </div>
+    </header>
+
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <p class="mb-0">Tour4teen - hệ thống cung cấp dịch vụ du lịch giá rẻ uy tín </p>
+
+                    <p class="mb-0">
+                        <a>Sở hữu những phút giây tuyệt vời với chi phí rẻ nhất  </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
-    </div>
 
 
 
 
 
 
+
+
+
+
+
+
+    <section class="section visit-section" id="next-section" style="background-color:#edefee">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading" data-aos="fade-up">COMBO TOUR </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up">
+                    <a href="/tour-single"><img src="{{url_for('static', filename='img/tamdao.jpg')}}" alt="Image placeholder" class="img-fluid rounded"> </a>
+                    <h3><a href="/tour-single">900.000 VND/người</a></h3>
+                    <div class="reviews-star float-left">
+                        Tam Đảo - 3 ngày 2 đêm
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <a href="/tour-single"><img src="{{url_for('static', filename='img/sapa.jpg')}}" alt="Image placeholder" class="img-fluid rounded"> </a>
+                    <h3><a href="/tour-single">1,100,000 VND/người</a></h3>
+                    <div class="reviews-star float-left">
+                        Sapa - 3 ngày 2 đêm
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <a href="/tour-single"><img src="{{url_for('static', filename='img/bavi.png')}}" alt="Image placeholder" class="img-fluid rounded"> </a>
+                    <h3><a href="/tour-single">600,000 VND/người </a></h3>
+                    <div class="reviews-star float-left">
+                        Ba Vì - 2 ngày 1 đêm
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up" data-aos-delay="300">
+                    <a href="/tour-single"><img src="{{url_for('static', filename='img/halong.jpg')}}" alt="Image placeholder" class="img-fluid rounded"> </a>
+                    <h3><a href="/tour-single">750,000 VND/người</a></h3>
+                    <div class="reviews-star float-left">
+                        Hạ Long - 2 ngày 1 đêm
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+
+    <section class="section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2>Tour4teen team</h2>
+                </div>
+            </div>
+            <div class="js-carousel-1 owl-carousel">
+
+                <div class="testimonial text-center">
+                    <div class="author-image mb-3">
+                        <img src="{{url_for('static', filename='img/person_1.jpg')}}" alt="Image placeholder" class="rounded-circle">
+                    </div>
+                    <blockquote>
+
+                        <p>&ldquo;Tour4teen là cửa hàng bạn có thể mua niềm vui với chi phí rẻ nhất và sẵn nhất ! Chúng tôi xây dựng thương hiệu này từ chính nhu cầu của chúng tôi , những gì chúng tôi muốn có , các bạn sẽ có ! &rdquo;</p>
+                    </blockquote>
+                    <p><em>&mdash;Co-founder : Nguyễn Huy Trung - C4E 30 </em></p>
+
+                </div>
+
+                <div class="testimonial text-center">
+                    <div class="author-image mb-3">
+                        <img src="{{url_for('static', filename='img/person_2.jpg')}}" alt="Image placeholder" class="rounded-circle">
+                    </div>
+                    <blockquote>
+                        <p>&ldquo;Nhân viên nhiệt tình, giá cả phải chăng , nhiều ưu đãi hấp dẫn , Tour4teen là một địa chỉ uy tín cho những ai muốn du lịch!&rdquo;</p>
+                    </blockquote>
+                    <p><em>&mdash;Chị Nhung - </em></p>
+                </div>
+
+                <div class="testimonial text-center">
+                    <div class="author-image mb-3">
+                        <img src="{{url_for('static', filename='img/person_3.jpg')}}" alt="Image placeholder" class="rounded-circle">
+                    </div>
+                    <blockquote>
+
+                        <p>&ldquo;Vừa rồi mình đã cùng vợ chụp bộ ảnh cưới trong tour du lịch của Tour4teen , Tour hơn lí, phòng nghỉ , nhà hàng , địa điểm vui chơi đều thiết kế hài hòa , cảm ơn vì đã giúp mình và vợ có những phút giây hạnh phúc !&rdquo;</p>
+                    </blockquote>
+                    <p><em>&mdash;Anh Hào - </em></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color :#edefee">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <img src="{{url_for('static', filename='img/about_1.jpg')}}" alt="Image" class="img-fluid rounded img-shadow">
+                </div>
+                <div class="col-lg-4 ml-auto">
+                    <h3 class="mb-3">About Me</h3>
+                    <p>Châm ngôn của chúng tôi : Làm bằng tất cả sự nhiệt huyết , tấm lòng , đam mê ! Tour4teen ra đời với mục đích mang đến cho tất cả mọi người những phút giây tuyệt vời nhất của cuộc đời , những chuyến đi cùng người thân sẽ là những kỉ
+                        niệm khó quên trong lòng mỗi khách hàng.</p>
+                    <p>Chúng tôi sẽ không ngừng xây dựng , cải thiện , phát triển mỗi ngày để không phụ lòng mỗi quý khách hàng!</p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-lg-0 col-lg-4 text-center">
+                    <span class="ion-android-calendar display-3 text-primary"></span>
+                    <h3 class="card-title">Trải nghiệm uy tín </h3>
+                    <p>Chúng tôi mang đến cho bạn những chuyến đi khó quên trong cuộc đời cả về ý nghĩa về chất lượng.</p>
+                </div>
+                <div class="col-md-6 mb-4 mb-lg-0 col-lg-4 text-center">
+                    <span class="ion-android-create display-3 text-primary"></span>
+                    <h3 class="card-title">Đánh giá chất lượng</h3>
+                    <p>Những địa chỉ chúng tôi liên kết đã được chính Tour4teen và cộng đồng đánh giá một cách khách quan dựa trên những trải nghiệm thực tế.</p>
+                </div>
+                <div class="col-md-6 mb-4 mb-lg-0 col-lg-4 text-center">
+                    <span class="ion-android-hangout display-3 text-primary"></span>
+                    <h3 class="card-title">Hỗ trợ liên tục</h3>
+                    <p>Bất cứ khi nào và bất cứ ở đâu , gọi ngay cho Tour4teen hotline : 0988723707 để đặt phòng , hỏi tư vấn , tra cứu tour , nhận hỗ trợ . Chúng tôi sẽ luôn bên bạn </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-md-8">
+                    <h2 class="heading" data-aos="fade-up">Viết về những chuyến đi..</h2>
+                    <p class="lead font" data-aos="fade-up"> Hai mươi năm về sau bạn sẽ hối hận về những gì bạn không làm hơn là những gì bạn làm. Vậy nên hãy tháo dây, nhổ neo ra khỏi bến đỗ an toàn. Hãy để cánh buồn của bạn đón trọn lấy gió. Thám hiểm. Mơ mộng. Khám phá. (Mark Twain)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="media media-custom d-block mb-4">
+                        <a href="blog-single.html" class="mb-4 d-block"><img src="{{url_for('static', filename='img/tau.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                        <div class="media-body">
+                            <span class="meta-post">February 26, 2018</span>
+                            <h2 class="mt-0 mb-3"><a href="#">Kinh nghiệm đi tàu không say?</a></h2>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
+                    <div class="media media-custom d-block mb-4">
+                        <a href="blog-single.html" class="mb-4 d-block"><img src="{{url_for('static', filename='img/bien.png')}}" alt="Image placeholder" class="img-fluid"></a>
+                        <div class="media-body">
+                            <span class="meta-post">February 26, 2018</span>
+                            <h2 class="mt-0 mb-3"><a href="#">Top các bãi biển đẹp nhất phía Bắc?</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="300">
+                    <div class="media media-custom d-block mb-4">
+                        <a href="blog-single.html" class="mb-4 d-block"><img src="{{url_for('static', filename='img/phòng.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                        <div class="media-body">
+                            <span class="meta-post">February 26, 2018</span>
+                            <h2 class="mt-0 mb-3"><a href="#">Chọn khách sạn thế nào là hợp lí?</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+
+    <footer class="section footer-section  colorchange">
+        <div class="container">
+            <div class="row mb-4">
+
+                <div class="col-md-3 mb-5 pr-md-5 contact-info">
+                    <p><span class="d-block">Address:</span> <span>Tầng 6, toà C, 22 Thành Công, Hà Nội</span></p>
+                    <p><span class="d-block">Phone:</span> <span> 0988723707</span></p>
+                    <p><span class="d-block">Email:</span> <span> contact@mindx.edu.vn</span></p>
+                </div>
+                <div class="col-md-3 mb-5">
+                    <p>Sign up for our newsletter</p>
+                    <form action="#" class="footer-newsletter">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your email...">
+                            <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row bordertop pt-5">
+                <p class="col-md-6 text-left"> @Bản quyền thuộc tập đoàn Tour4teen
+                    <a href="https://colorlib.com/"></a>
+                </p>
+
+                <p class="col-md-6 text-right social">
+                    <a href="#"><span class="fa fa-twitter"></span></a>
+                    <a href="#"><span class="fa fa-linkedin"></span></a>
+                    <a href="#"><span class="fa fa-facebook"></span></a>
+                    <a href="#"><span class="fa fa-instagram"></span></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/aos.js')}}"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
 </body>
 
 </html>
